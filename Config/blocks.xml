@@ -1,0 +1,106 @@
+<configs>
+	<insertafter xpath="/blocks/block[@name='terrOreIron']">
+		<!-- blocks support `map-only` feature to add conditionally -->
+		<!-- the `*` is the default setting to "include for all" maps -->
+		<!-- unfortunately there is no real wildcard support for this yet -->
+		<!-- you can define multiple names for `map-only` separated by `;` -->
+		<!-- Also referenced in vein deco prefab -->
+		<block name="terrOreGold" map-only="*">
+			<property name="CanMobsSpawnOn" value="true"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Material" value="MoreMetal"/>
+			<property name="NoScrapping" value="true"/>
+			<property name="Shape" value="Terrain"/>
+			<property name="Mesh" value="terrain"/>
+			<property name="LPHardnessScale" value="2"/>
+			<property name="Tags" value="ore,deepOre"/>
+			<property name="SortOrder1" value="0000"/>
+			<property name="SortOrder2" value="0950"/>
+			<property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+			<!-- color that will be on the map if top block on terrain -->
+			<!-- this makes up the little indicator for ores on the map -->
+			<property name="Map.Color" value="240,215,0"/>
+			<property name="ImposterExclude" value="true"/>
+			<property name="DisplayType" value="blockTerrain"/>
+			<property name="DescriptionKey" value="terrainBlockGroupDesc"/>
+			<!-- reference to the voxel configured in `worldglobal.xml` -->
+			<property name="MicroSplatVoxel" value="voxelOre0"/>
+			<!-- reference to the texture configured in `worldglobal.xml` -->
+			<!-- this is used for the preview block when placing it -->
+			<property name="TerrainIndex" value="ore0"/>
+			<property name="MaxDamage" value="950"/>
+			<!-- get some resources from it (much overpowered for the abundance)-->
+			<drop event="Harvest" name="resourceRawDiamond" prob=".025" count="1" tag="oreWoodHarvest"/>
+			<drop event="Harvest" name="resourceGoldNugget" prob=".275" count="1" tag="oreWoodHarvest"/>
+			<drop event="Fall" name="resourceScrapIron" count="150" prob="0.4" stick_chance="0"/>
+			<drop event="Destroy" count="0"/>
+		</block>
+
+		<block name="terrOreLava" map-only="*">
+			<property name="CanMobsSpawnOn" value="true"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Material" value="MoreStone"/>
+			<property name="NoScrapping" value="true"/>
+			<property name="Shape" value="Terrain"/>
+			<property name="Mesh" value="terrain"/>
+			<property name="LPHardnessScale" value="2"/>
+			<property name="SortOrder1" value="0000"/>
+			<property name="SortOrder2" value="0950"/>
+			<property name="FilterTags" value="MC_outdoor,SC_terrain"/>
+			<!-- reference to the voxel configured in `worldglobal.xml` -->
+			<property name="MicroSplatVoxel" value="voxelLava0"/>
+			<!-- reference to the texture configured in `worldglobal.xml` -->
+			<!-- this is used for the preview block when placing it -->
+			<property name="TerrainIndex" value="lava0"/>
+			<property name="MaxDamage" value="1100"/>
+			<!-- get some resources from it (much overpowered for the abundance)-->
+			<drop event="Harvest" name="resourceCoal" count="15" tag="oreWoodHarvest"/>
+			<drop event="Harvest" name="resourceRockSmall" count="20" tag="oreWoodHarvest"/>
+			<drop event="Harvest" name="resourceRawDiamond" prob=".1" count="1" tag="oreWoodHarvest"/>
+			<drop event="Harvest" name="resourceGoldNugget" prob=".003" count="1" tag="oreWoodHarvest"/>
+			<drop event="Destroy" count="0"/>
+		</block>
+	</insertafter>
+	<append xpath="/blocks">
+		<!-- Boulder that goes on top of vein -->
+		<!-- Also referenced in vein deco prefab -->
+		<block name="oreGoldBoulder">
+			<!-- Boulder model is actually tintable -->
+			<!-- this is done by using a special shader -->
+			<property name="TintColor" value="E3BC0C"/>
+			<property name="Extends" value="oreBoulderMaster"/>
+			<!-- color painted on the map if block is at top -->
+			<property name="Map.Color" value="240,215,0"/>
+			<property name="Material" value="MoreMetal"/>
+			<property name="MaxDamage" value="850"/>
+			<property name="Model" value="#@modfolder:Resources/OreBoulders.unity3d?BoulderPrefab"/>
+			<drop event="Harvest" name="resourceGoldNugget" prob=".2" count="1" tag="oreWoodHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="SortOrder2" value="0105"/>
+		</block>
+		<!-- Unused block to show/test tint color -->
+		<block name="oreTestBoulderAqua">
+			<!-- Boulder model is actually tintable -->
+			<!-- this is done by using a special shader -->
+			<property name="Extends" value="oreGoldBoulder"/>
+			<property name="TintColor" value="00FFB3"/>
+		</block>
+		<block name="oreTestBoulderRed">
+			<!-- Boulder model is actually tintable -->
+			<!-- this is done by using a special shader -->
+			<property name="Extends" value="oreGoldBoulder"/>
+			<property name="TintColor" value="BA0004"/>
+		</block>
+
+		<!-- Helper used in prefab to generate the hole -->
+		<!-- See corresponding entry in blockplaceholders -->
+		<!-- Also referenced in vein deco prefab -->
+		<block name="terrOreStoneGoldRandom">
+			<property name="Extends" value="terrOreStoneIronRandom"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="ItemTypeIcon" value="other"/>
+			<property name="SortOrder1" value="0000"/>
+			<property name="SortOrder2" value="1450"/>
+		</block>
+	</append>
+</configs>

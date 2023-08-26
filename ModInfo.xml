@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<Name value="OcbMicroSplatOreVoxels" />
+	<DisplayName value="OCB MicroSplat Ore Voxels Demo" />
+	<Description value="New custom ore voxels, requires OcbMicroSplat." />
+	<Website value="https://github.com/OCB7D2D/OcbMicroSplatOreVoxels" />
+	<Author value="ocbMaurice" />
+	<Version value="0.1.0" />
+</xml>

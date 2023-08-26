@@ -1,0 +1,8 @@
+Key,english
+terrOreGold,Gold Ore
+terrOreLava,Lava Ore
+oreGoldBoulder,Gold Ore Boulder
+oreTestBoulderAqua,Aqua Ore Boulder
+oreTestBoulderRed,Red Ore Boulder
+terrOreStoneGoldRandom,= Gold Vein = Helper
+terrOreStoneGoldRandomDesc,Gold / Stone / Sandstone

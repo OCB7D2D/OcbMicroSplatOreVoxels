@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eb9b962dd7675847a24903344229fee, type: 3}
+  m_Name: MicroSplatOreVoxels
+  m_EditorClassIdentifier: 
+  Size: 2
+  Path: 
+  WrapMode: 0
+  FilterMode: 2
+  AnisoLevel: 8
+  Textures:
+  - Albedo: {fileID: 2800000, guid: ad39f4d8a904b7c448ea4aa4fc1f15a2, type: 3}
+    Height: {fileID: 2800000, guid: a0432990e36f6fb4e851bb365c7b6280, type: 3}
+    Normal: {fileID: 2800000, guid: a6d906aea84c3bf4cb4ac5a0f82bc3f4, type: 3}
+    IsNormalSwitched: 1
+    IsNormalInverted: 0
+    IsHeightCentered: 0
+    IsHeightNormalized: 1
+    Smoothness: {fileID: 2800000, guid: ebccd4979d428ac4fb278691f380cb9b, type: 3}
+    IsRoughness: 1
+    Occlusion: {fileID: 0}
+  - Albedo: {fileID: 2800000, guid: f9ac4c47821ce0749b22e3dde38a4397, type: 3}
+    Height: {fileID: 2800000, guid: 682d9179b95e2eb458327cb7015b641c, type: 3}
+    Normal: {fileID: 2800000, guid: 3b7c903e325bed8448046ddccf4ac233, type: 3}
+    IsNormalSwitched: 1
+    IsNormalInverted: 0
+    IsHeightCentered: 0
+    IsHeightNormalized: 1
+    Smoothness: {fileID: 2800000, guid: 8d24f28e858528b4faafe88b811e2003, type: 3}
+    IsRoughness: 1
+    Occlusion: {fileID: 2800000, guid: 8830ba7315eab2b499dc6128f76e51aa, type: 3}
