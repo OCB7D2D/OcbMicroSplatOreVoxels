@@ -8,17 +8,9 @@ Requires [OcbMicroSplat][1] (Download from [Nexusmods][3]).
 
 The top boulder is tintable to be re-usable.
 
-![Top boulders](Screens/top-boulders.jpg)
+![Top boulders](Screens/top-boulder.jpg)
 
 You need to disable EAC to use this mod!
-
-## In-Game Screenshots
-
-First screen shows custom biome, second one vanilla:
-
-![Snow Biome Custom](Screens/snow-custom.jpg)
-
-![Snow Biome Vanilla](Screens/snow-vanilla.jpg)
 
 ## Changelog
 
