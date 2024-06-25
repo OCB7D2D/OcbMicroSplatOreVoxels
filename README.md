@@ -14,13 +14,14 @@ You need to disable EAC to use this mod!
 
 ## Changelog
 
+### Version 0.2.0
+
+- First compatibility with V1.0 (exp)
+- Bumped unity version to 2022.3.29f1
+
 ### Version 0.1.0
 
 - Initial version
-
-## Compatibility
-
-Developed initially for a21.1(b6), updated through a21.2(b14).
 
 [1]: https://github.com/OCB7D2D/OcbMicroSplat
 [2]: https://github.com/OCB7D2D/OcbMicroSplat/releases
