@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2eb9b962dd7675847a24903344229fee, type: 3}
   m_Name: MicroSplatOreVoxels
   m_EditorClassIdentifier: 
-  Size: 2
+  Size: 3
   Path: 
   WrapMode: 0
   FilterMode: 2
@@ -27,7 +27,9 @@ MonoBehaviour:
     IsHeightNormalized: 1
     Smoothness: {fileID: 2800000, guid: ebccd4979d428ac4fb278691f380cb9b, type: 3}
     IsRoughness: 1
+    Metallic: {fileID: 2800000, guid: ebccd4979d428ac4fb278691f380cb9b, type: 3}
     Occlusion: {fileID: 0}
+    Emission: {fileID: 0}
   - Albedo: {fileID: 2800000, guid: f9ac4c47821ce0749b22e3dde38a4397, type: 3}
     Height: {fileID: 2800000, guid: 682d9179b95e2eb458327cb7015b641c, type: 3}
     Normal: {fileID: 2800000, guid: 3b7c903e325bed8448046ddccf4ac233, type: 3}
@@ -37,4 +39,18 @@ MonoBehaviour:
     IsHeightNormalized: 1
     Smoothness: {fileID: 2800000, guid: 8d24f28e858528b4faafe88b811e2003, type: 3}
     IsRoughness: 1
+    Metallic: {fileID: 0}
     Occlusion: {fileID: 2800000, guid: 8830ba7315eab2b499dc6128f76e51aa, type: 3}
+    Emission: {fileID: 2800000, guid: 78f8b59fc33860d4ebc5f6324e8c439f, type: 3}
+  - Albedo: {fileID: 2800000, guid: cdba8206e18199847a65f88e75728399, type: 3}
+    Height: {fileID: 2800000, guid: 9fa48b386fccf6e42bd32706e306a49f, type: 3}
+    Normal: {fileID: 2800000, guid: b20d0edcbd95bb546bc109ff6c73ad42, type: 3}
+    IsNormalSwitched: 1
+    IsNormalInverted: 0
+    IsHeightCentered: 0
+    IsHeightNormalized: 1
+    Smoothness: {fileID: 2800000, guid: 05aa8ef6b0af72c4192ae4ebbd8e47be, type: 3}
+    IsRoughness: 0
+    Metallic: {fileID: 2800000, guid: bcad5bd18d0af654499ad1db3291b99e, type: 3}
+    Occlusion: {fileID: 2800000, guid: 2c2cd4ff92fa548469483dea92867629, type: 3}
+    Emission: {fileID: 0}
