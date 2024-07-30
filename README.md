@@ -14,6 +14,12 @@ You need to disable EAC to use this mod!
 
 ## Changelog
 
+### Version 0.2.1
+
+- Add texture for lava emission map 
+- Add textures for metallic iron ore
+- Replace iron ore with new textures
+
 ### Version 0.2.0
 
 - First compatibility with V1.0 (exp)
