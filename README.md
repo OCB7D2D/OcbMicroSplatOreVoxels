@@ -14,6 +14,10 @@ You need to disable EAC to use this mod!
 
 ## Changelog
 
+### Version 0.2.2
+
+- Update for 7D2D V2.0 stable
+
 ### Version 0.2.1
 
 - Add texture for lava emission map 
